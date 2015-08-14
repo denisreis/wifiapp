@@ -8,7 +8,7 @@ class Denisreis {
 	
 			static constraints = {
 				nome nullable:false, blank:false
-				cpf nullable:false, blank:false
+				cpf nullable:false, blank:false, maxlenght:5
 				mac nullable:false, blank:false
 				tipo nullable:false, blank:false				
 			}
