@@ -18,6 +18,11 @@
         </div>
         <div>
             <input type="text" name="name" onchange="greetName(this.value)"/>
+				<script>
+    				function greetName(name) {
+        			<g:remoteFunction controller="greeting" action="greetName" update="greetingBox" params="'name='+name"/>
+    }
+</script>
         </div>
         <script>
             <g:remoteFunction controller="greeting" action="initialGreeting" update="greetingBox"/>
